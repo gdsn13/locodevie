@@ -1,0 +1,31 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+fr:
+  locomotive:
+    shared:
+      menu:
+        contents: Pages
+        models: "Contenu"
+    models:
+      index:
+        title: "Modèles de contenus"
+        help: "Les contenus spécifiques du site sont rangés ici"
+    custom_fields:
+      types:
+        many_to_many:
+          new_entry: + Ajouter
+  mongoid:
+    attributes:
+      locomotive/content_type:
+        associable: Associable ca
+  formtastic:
+    labels:
+      content_type:
+        associable: Associable cb
+    hints:
+      content_type:
+        associable: This content type can be associated to pages
+    titles:
+      juels: Jules
+

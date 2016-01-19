@@ -1,0 +1,7 @@
+- if can? :create, Locomotive::Page
+  .action
+    = link_to new_page_path, class: 'button' do
+      %i.icon-plus
+      = t('locomotive.pages.index.new')
+      
+= locale_picker_link

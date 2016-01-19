@@ -1,0 +1,20 @@
+- title t('.title')
+
+- content_for :submenu do
+  = render 'locomotive/shared/model_contents_menu'
+
+- content_for :actions do
+  = render 'locomotive/shared/model_contents_actions'
+
+%p!= t('.help')
+
+%ul#pages-list
+  - if all_content_types.size > 0
+    - all_content_types.each do |content_type|
+      %li
+        %em
+        %strong= link_to truncate(content_type.name, :length => 80), content_entries_path(content_type.slug)
+
+        .more
+          %span!= t('.updated_at')
+          = l content_type.updated_at, :format => :short

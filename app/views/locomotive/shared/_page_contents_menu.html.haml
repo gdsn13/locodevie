@@ -1,0 +1,3 @@
+= submenu_entry 'pages', pages_path
+- current_site.pages.unscoped.latest_updated.minimal_attributes.each do |page|
+  = submenu_entry truncate(page.title, length: 15), edit_page_path(page)

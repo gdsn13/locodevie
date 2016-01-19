@@ -1,0 +1,15 @@
+- title t('.title')
+
+- content_for :submenu do
+  = render 'locomotive/shared/page_contents_menu'
+
+- content_for :actions do
+  = render 'locomotive/shared/page_contents_actions'
+
+%p!= t('.help')
+
+- if @pages.empty?
+  %p.no-items!= t('.no_items', url: new_page_path)
+- else
+  %ul#pages-list
+    = render @pages
