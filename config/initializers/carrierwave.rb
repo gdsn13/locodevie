@@ -9,7 +9,11 @@ CarrierWave.configure do |config|
     config.root = File.join(Rails.root, 'public')
 
   when :production
+    config.storage = :file
+    config.root = File.join(Rails.root, 'public')
+    
     # the following configuration works for Amazon S3
+=begin
     config.storage          = :fog
     config.fog_credentials  = {
       provider:                 'AWS',
@@ -18,6 +22,7 @@ CarrierWave.configure do |config|
       region:                   ENV['S3_BUCKET_REGION']
     }
     config.fog_directory    = ENV['S3_BUCKET']
+=end
 
   else
     # settings for the local filesystem
