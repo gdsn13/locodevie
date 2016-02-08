@@ -3,6 +3,8 @@ module Locomotive
 
     sections 'models'
 
+    localized
+
     before_filter :back_to_default_site_locale, only: %w(new create)
 
     respond_to :json, only: [:create, :update, :destroy]
