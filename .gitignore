@@ -3,5 +3,8 @@
 #foo.txt
 
 .rvmrc
-
+.ruby-gemset
+.ruby-version
+tmp
+log
 
