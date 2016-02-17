@@ -5,6 +5,6 @@
 .rvmrc
 .ruby-gemset
 .ruby-version
-tmp
-log
-
+tmp/
+log/
+vendor/
