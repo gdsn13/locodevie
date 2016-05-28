@@ -5,8 +5,8 @@ gem 'rails', '3.2.21'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-#gem 'locomotive_cms', '~> 2.5.7', :require => 'locomotive/engine', github: 'gdsn13/engine', branch: 'v2.5.x'
-gem 'locomotive_cms', '~> 2.5.7', :require => 'locomotive/engine', path: '/Users/gumar/Documents/websites/loco257engine', branch: 'v2.5.x'
+gem 'locomotive_cms', '~> 2.5.7', :require => 'locomotive/engine', github: 'gdsn13/engine', branch: 'v2.5.x'
+#gem 'locomotive_cms', '~> 2.5.7', :require => 'locomotive/engine', path: '/Users/gumar/Documents/websites/loco257engine', branch: 'v2.5.x'
 #gem 'spree_cyber_plus_paiement', path: '/Users/gumar/Documents/SITES/cyber_plus_paiement', branch: 'master'
 
 
